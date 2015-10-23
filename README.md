@@ -2,6 +2,8 @@
 
 Visualization submitted by [pieroit](http://pieroit.org/portfolio) to the [WSD2015 challege](https://unite.un.org/ideas/content/wsd2015-data-visualization-challenge).
 
+The visualization provides an overall view of MDGs and their spatio-temporal distribution. More details are attached below as a PDF.
+
 
 ## License
 
