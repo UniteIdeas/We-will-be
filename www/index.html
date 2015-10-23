@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>We'll be - pieroit@wsd2015</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="lib/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+        <link href="lib/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="css/index.css" rel="stylesheet" />
+    </head>
+    <body>
+        
+        <div id="main">
+            <div id="map">
+                
+                <div id="header">
+                    <h2 id="title">We'll be</h2>
+                    <span id="legend">
+                        <div>
+                        
+                        <a href="http://pieroit.org/portfolio">pieroit</a> @ <a href="https://unite.un.org/ideas/content/wsd2015-data-visualization-challenge">wsd2015</a>
+                        <br><br><br>
+                        This visualization suggests the big picture about MDGs.</br></br>
+                        1 - select an indicator from the list on the left</br>
+                        2 - navigate time pressing play or moving the timeline</br>
+                        3 - zoom the map with location buttons just above the timeline</br>
+                        <!--<img src="tutorial.png" />-->
+                        <br>
+                        <a href="WSD2015_submission_pieroit.pdf">Docs</a> and <a href="https://bitbucket.org/pieroit/wsd2015/src">code</a> available.
+                            <div id="licenses">
+                                Infographics and databases are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International license</a>.<br>
+                            Software (e.g. dynamic visualizations) is licensed under a <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License Version 3</a>.
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                
+                <div id="sidebar">
+
+                    <div id="accordion">
+                        
+                    </div>
+
+                </div>
+                
+                <div id="timeline">
+                    <span id="year"></span>
+                    <span id="play" class="fa fa-pause fa-2x"></span>
+                    <span id="navigator">
+                        <span class="area-zoom un-active" data-dx="0" data-dy="0" data-scale="1">World</span>
+                        <span class="area-zoom" data-dx="0" data-dy="0" data-scale="2">Northern America</span>
+                        <span class="area-zoom" data-dx="0" data-dy="-0.7" data-scale="2">Latin America and Caribbean</span>
+                        <span class="area-zoom" data-dx="-0.6" data-dy="0" data-scale="2">Europe</span>
+                        <span class="area-zoom" data-dx="-0.5" data-dy="-0.3" data-scale="2">Northern Africa</span>
+                        <span class="area-zoom" data-dx="-0.5" data-dy="-0.7" data-scale="2">Sub-Saharan Africa</span>
+                        <span class="area-zoom" data-dx="-0.7" data-dy="-0.3" data-scale="2">Western Asia</span>
+                        <span class="area-zoom" data-dx="-0.8" data-dy="-0.1" data-scale="2">Caucasus and Central Asia</span>
+                        <span class="area-zoom" data-dx="-0.8" data-dy="-0.3" data-scale="2">Southern Asia</span>
+                        <span class="area-zoom" data-dx="-1" data-dy="-0.5" data-scale="2">South-eastern Asia</span>
+                        <span class="area-zoom" data-dx="-1" data-dy="-0.2" data-scale="2">Eastern Asia</span>
+                        <span class="area-zoom" data-dx="-1.1" data-dy="-0.7" data-scale="2">Oceania</span>
+                    </span>
+                    <div id="slider"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="lib/jquery-2.1.0.min.js"></script>
+        <script src="lib/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+        <script src="lib/simple_statistics.min.js"></script>
+        <script src="lib/topojson.v1.min.js"></script>
+        <script src="lib/d3.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
